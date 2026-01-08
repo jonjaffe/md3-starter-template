@@ -1,27 +1,47 @@
-import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { Link } from "react-router-dom";
+import "@material/web/button/filled-button.js";
+import "@material/web/icon/icon.js";
 
-const NotFound = () => {
-  const location = useLocation();
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      "md-filled-button": React.DetailedHTMLProps<
+        React.HTMLAttributes<HTMLElement>,
+        HTMLElement
+      >;
+      "md-icon": React.DetailedHTMLProps<
+        React.HTMLAttributes<HTMLElement>,
+        HTMLElement
+      >;
+    }
+  }
+}
 
-  useEffect(() => {
-    console.error(
-      "404 Error: User attempted to access non-existent route:",
-      location.pathname,
-    );
-  }, [location.pathname]);
-
+export default function NotFound() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">404</h1>
-        <p className="text-xl text-gray-600 mb-4">Oops! Page not found</p>
-        <a href="/" className="text-blue-500 hover:text-blue-700 underline">
-          Return to Home
-        </a>
+    <div className="min-h-screen bg-background flex items-center justify-center p-6">
+      <div className="text-center max-w-md">
+        <div className="flex justify-center mb-6">
+          <md-icon
+            style={{
+              fontSize: "96px",
+              color: "hsl(var(--md-sys-color-primary))",
+            }}
+          >
+            error_outline
+          </md-icon>
+        </div>
+        <h1 className="text-6xl font-bold text-primary mb-4">404</h1>
+        <h2 className="text-2xl font-medium text-foreground mb-4">
+          Page Not Found
+        </h2>
+        <p className="text-base text-surface-variant-foreground mb-8">
+          The page you're looking for doesn't exist or hasn't been created yet.
+        </p>
+        <Link to="/">
+          <md-filled-button>Return Home</md-filled-button>
+        </Link>
       </div>
     </div>
   );
-};
-
-export default NotFound;
+}
