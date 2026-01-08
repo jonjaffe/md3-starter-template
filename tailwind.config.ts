@@ -19,19 +19,22 @@ export default {
           DEFAULT: "hsl(var(--md-sys-color-primary))",
           foreground: "hsl(var(--md-sys-color-on-primary))",
           container: "hsl(var(--md-sys-color-primary-container))",
-          "container-foreground": "hsl(var(--md-sys-color-on-primary-container))",
+          "container-foreground":
+            "hsl(var(--md-sys-color-on-primary-container))",
         },
         secondary: {
           DEFAULT: "hsl(var(--md-sys-color-secondary))",
           foreground: "hsl(var(--md-sys-color-on-secondary))",
           container: "hsl(var(--md-sys-color-secondary-container))",
-          "container-foreground": "hsl(var(--md-sys-color-on-secondary-container))",
+          "container-foreground":
+            "hsl(var(--md-sys-color-on-secondary-container))",
         },
         tertiary: {
           DEFAULT: "hsl(var(--md-sys-color-tertiary))",
           foreground: "hsl(var(--md-sys-color-on-tertiary))",
           container: "hsl(var(--md-sys-color-tertiary-container))",
-          "container-foreground": "hsl(var(--md-sys-color-on-tertiary-container))",
+          "container-foreground":
+            "hsl(var(--md-sys-color-on-tertiary-container))",
         },
         error: {
           DEFAULT: "hsl(var(--md-sys-color-error))",

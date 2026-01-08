@@ -95,7 +95,14 @@ declare namespace JSX {
         error?: boolean;
         "error-text"?: string;
         "supporting-text"?: string;
-        type?: "text" | "email" | "number" | "password" | "search" | "tel" | "url";
+        type?:
+          | "text"
+          | "email"
+          | "number"
+          | "password"
+          | "search"
+          | "tel"
+          | "url";
       },
       HTMLElement
     >;
@@ -109,7 +116,14 @@ declare namespace JSX {
         error?: boolean;
         "error-text"?: string;
         "supporting-text"?: string;
-        type?: "text" | "email" | "number" | "password" | "search" | "tel" | "url";
+        type?:
+          | "text"
+          | "email"
+          | "number"
+          | "password"
+          | "search"
+          | "tel"
+          | "url";
       },
       HTMLElement
     >;

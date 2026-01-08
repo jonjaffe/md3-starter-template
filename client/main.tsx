@@ -24,5 +24,5 @@ if (!(container as any)._reactRoot) {
 root.render(
   <StrictMode>
     <App />
-  </StrictMode>
+  </StrictMode>,
 );

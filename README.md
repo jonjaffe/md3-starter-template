@@ -34,6 +34,7 @@ pnpm start
 This starter includes TypeScript support for all Material Web Components:
 
 **Buttons**
+
 - `<md-filled-button>` - High-emphasis actions
 - `<md-outlined-button>` - Medium-emphasis actions
 - `<md-text-button>` - Low-emphasis actions
@@ -41,11 +42,13 @@ This starter includes TypeScript support for all Material Web Components:
 - `<md-filled-tonal-button>` - Middle-ground emphasis
 
 **Cards**
+
 - `<md-elevated-card>` - Cards with shadow elevation
 - `<md-filled-card>` - Cards with tonal background
 - `<md-outlined-card>` - Cards with outline border
 
 **Form Inputs**
+
 - `<md-filled-text-field>` - Text inputs with filled style
 - `<md-outlined-text-field>` - Text inputs with outlined style
 - `<md-checkbox>` - Checkboxes
@@ -55,6 +58,7 @@ This starter includes TypeScript support for all Material Web Components:
 - `<md-filled-select>` / `<md-outlined-select>` - Dropdowns
 
 **Other Components**
+
 - `<md-icon>` - Material Icons
 - `<md-fab>` - Floating action buttons
 - `<md-chip>` variants - Chips for filters, inputs, etc.
@@ -174,13 +178,13 @@ This starter is intentionally **minimal and bare-bones** to serve as a clean fou
 ✅ Material Design 3 web components and theming  
 ✅ TypeScript support for all MD3 components  
 ✅ Responsive layout with Tailwind CSS  
-✅ Clean project structure  
+✅ Clean project structure
 
 It does NOT include:
 ❌ State management (add Redux, Zustand, etc. as needed)  
 ❌ API client libraries (add Axios, TanStack Query, etc. as needed)  
 ❌ Authentication (add your preferred auth solution)  
-❌ Database integrations (add as needed)  
+❌ Database integrations (add as needed)
 
 ## 📚 Resources
 
@@ -206,6 +210,7 @@ It does NOT include:
 ### Creating a Custom Theme
 
 Use Google's [Material Theme Builder](https://material-foundation.github.io/material-theme-builder/) to:
+
 1. Pick your brand colors
 2. Generate a complete color palette
 3. Copy the generated tokens to `client/global.css`
@@ -217,10 +222,14 @@ The theme tokens are already set up for dark mode. To add a toggle:
 ```tsx
 function ThemeToggle() {
   const toggleDark = () => {
-    document.documentElement.classList.toggle('dark');
+    document.documentElement.classList.toggle("dark");
   };
-  
-  return <md-filled-icon-button onClick={toggleDark}>dark_mode</md-filled-icon-button>;
+
+  return (
+    <md-filled-icon-button onClick={toggleDark}>
+      dark_mode
+    </md-filled-icon-button>
+  );
 }
 ```
 

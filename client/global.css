@@ -123,7 +123,11 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    font-family:
+      "Roboto",
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
       sans-serif;
   }
 
@@ -155,6 +159,10 @@ md-elevated-card {
 }
 
 md-filled-text-field {
-  --md-filled-text-field-container-color: hsl(var(--md-sys-color-surface-variant));
-  --md-filled-text-field-label-text-color: hsl(var(--md-sys-color-on-surface-variant));
+  --md-filled-text-field-container-color: hsl(
+    var(--md-sys-color-surface-variant)
+  );
+  --md-filled-text-field-label-text-color: hsl(
+    var(--md-sys-color-on-surface-variant)
+  );
 }

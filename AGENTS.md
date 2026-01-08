@@ -38,18 +38,21 @@ tailwind.config.ts        # Tailwind with MD3 color tokens
 This starter includes the official Material Web Components library with support for:
 
 **Buttons**
+
 - `<md-filled-button>` - High-emphasis primary actions
-- `<md-outlined-button>` - Medium-emphasis secondary actions  
+- `<md-outlined-button>` - Medium-emphasis secondary actions
 - `<md-text-button>` - Low-emphasis tertiary actions
 - `<md-elevated-button>` - Actions needing visual separation
 - `<md-filled-tonal-button>` - Middle-ground emphasis
 
 **Cards**
+
 - `<md-elevated-card>` - Cards with shadow elevation
 - `<md-filled-card>` - Cards with tonal background
 - `<md-outlined-card>` - Cards with outline border
 
 **Form Inputs**
+
 - `<md-filled-text-field>` - Text inputs with filled style
 - `<md-outlined-text-field>` - Text inputs with outlined style
 - `<md-checkbox>` - Checkboxes
@@ -59,6 +62,7 @@ This starter includes the official Material Web Components library with support 
 - `<md-filled-select>` / `<md-outlined-select>` - Dropdowns
 
 **Other Components**
+
 - `<md-icon>` - Material Icons
 - `<md-fab>` - Floating action buttons
 - `<md-chip>` variants - Chips for filters, inputs, etc.
@@ -70,11 +74,13 @@ This starter includes the official Material Web Components library with support 
 ### Using Material Components
 
 1. **Import the web component:**
+
 ```typescript
 import "@material/web/button/filled-button.js";
 ```
 
 2. **Declare types (if TypeScript complains):**
+
 ```typescript
 declare global {
   namespace JSX {
@@ -89,6 +95,7 @@ declare global {
 ```
 
 3. **Use in JSX:**
+
 ```tsx
 <md-filled-button>Click Me</md-filled-button>
 ```
@@ -176,12 +183,12 @@ This starter is intentionally **minimal and bare-bones**:
 ✅ Material Design 3 web components and theming  
 ✅ TypeScript support for all MD3 components  
 ✅ Responsive layout with Tailwind CSS  
-✅ Clean project structure  
+✅ Clean project structure
 
 ❌ No state management (add as needed)  
 ❌ No API client libraries (add as needed)  
 ❌ No authentication (add as needed)  
-❌ No database integrations (add as needed)  
+❌ No database integrations (add as needed)
 
 ## Resources
 
