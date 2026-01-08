@@ -19,9 +19,24 @@ declare global {
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen bg-background flex items-center justify-center p-6">
-      <div className="text-center max-w-md">
-        <div className="flex justify-center mb-6">
+    <div
+      style={{
+        minHeight: "100vh",
+        background: "hsl(var(--md-sys-color-background))",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: "24px",
+      }}
+    >
+      <div style={{ textAlign: "center", maxWidth: "448px" }}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginBottom: "24px",
+          }}
+        >
           <md-icon
             style={{
               fontSize: "96px",
@@ -31,15 +46,40 @@ export default function NotFound() {
             error_outline
           </md-icon>
         </div>
-        <h1 className="text-6xl font-bold text-primary mb-4">404</h1>
-        <h2 className="text-2xl font-medium text-foreground mb-4">
+        <h1
+          style={{
+            fontSize: "72px",
+            fontWeight: "700",
+            color: "hsl(var(--md-sys-color-primary))",
+            marginBottom: "16px",
+            lineHeight: "1",
+          }}
+        >
+          404
+        </h1>
+        <h2
+          style={{
+            fontSize: "24px",
+            fontWeight: "500",
+            color: "hsl(var(--md-sys-color-on-surface))",
+            marginBottom: "16px",
+            lineHeight: "1.33",
+          }}
+        >
           Page Not Found
         </h2>
-        <p className="text-base text-surface-variant-foreground mb-8">
+        <p
+          style={{
+            fontSize: "16px",
+            color: "hsl(var(--md-sys-color-on-surface-variant))",
+            marginBottom: "32px",
+            lineHeight: "1.5",
+          }}
+        >
           The page you're looking for doesn't exist or hasn't been created yet.
         </p>
-        <Link to="/">
-          <md-filled-button>Return Home</md-filled-button>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <md-filled-button>Back to Home</md-filled-button>
         </Link>
       </div>
     </div>
