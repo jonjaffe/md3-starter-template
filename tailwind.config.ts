@@ -5,13 +5,6 @@ export default {
   content: ["./client/**/*.{ts,tsx}"],
   prefix: "",
   theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
-    },
     extend: {
       colors: {
         // Material Design 3 color tokens
@@ -40,7 +33,8 @@ export default {
           DEFAULT: "hsl(var(--md-sys-color-error))",
           foreground: "hsl(var(--md-sys-color-on-error))",
           container: "hsl(var(--md-sys-color-error-container))",
-          "container-foreground": "hsl(var(--md-sys-color-on-error-container))",
+          "container-foreground":
+            "hsl(var(--md-sys-color-on-error-container))",
         },
         surface: {
           DEFAULT: "hsl(var(--md-sys-color-surface))",
@@ -53,12 +47,6 @@ export default {
         outline: {
           DEFAULT: "hsl(var(--md-sys-color-outline))",
           variant: "hsl(var(--md-sys-color-outline-variant))",
-        },
-        // Backwards compatibility with existing components
-        border: "hsl(var(--border))",
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
         },
       },
       borderRadius: {
@@ -81,5 +69,5 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [],
 } satisfies Config;
