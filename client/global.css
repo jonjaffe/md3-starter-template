@@ -57,18 +57,6 @@
     --md-sys-shape-corner-large: 16px;
     --md-sys-shape-corner-extra-large: 28px;
     --md-sys-shape-corner-full: 9999px;
-
-    /* Tailwind compatibility - map to existing system */
-    --background: var(--md-sys-color-background);
-    --foreground: var(--md-sys-color-on-background);
-    --primary: var(--md-sys-color-primary);
-    --primary-foreground: var(--md-sys-color-on-primary);
-    --secondary: var(--md-sys-color-secondary);
-    --secondary-foreground: var(--md-sys-color-on-secondary);
-    --muted: var(--md-sys-color-surface-variant);
-    --muted-foreground: var(--md-sys-color-on-surface-variant);
-    --border: var(--md-sys-color-outline-variant);
-    --radius: var(--md-sys-shape-corner-medium);
   }
 
   .dark {
@@ -103,26 +91,17 @@
 
     --md-sys-color-outline: 220 5% 60%;
     --md-sys-color-outline-variant: 220 10% 30%;
-
-    --background: var(--md-sys-color-background);
-    --foreground: var(--md-sys-color-on-background);
-    --primary: var(--md-sys-color-primary);
-    --primary-foreground: var(--md-sys-color-on-primary);
-    --secondary: var(--md-sys-color-secondary);
-    --secondary-foreground: var(--md-sys-color-on-secondary);
-    --muted: var(--md-sys-color-surface-variant);
-    --muted-foreground: var(--md-sys-color-on-surface-variant);
-    --border: var(--md-sys-color-outline-variant);
   }
 }
 
 @layer base {
   * {
-    @apply border-border;
+    border-color: hsl(var(--md-sys-color-outline-variant));
   }
 
   body {
-    @apply bg-background text-foreground;
+    background: hsl(var(--md-sys-color-background));
+    color: hsl(var(--md-sys-color-on-background));
     font-family:
       "Roboto",
       -apple-system,
