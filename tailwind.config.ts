@@ -14,76 +14,67 @@ export default {
     },
     extend: {
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+        // Material Design 3 color tokens
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: "hsl(var(--md-sys-color-primary))",
+          foreground: "hsl(var(--md-sys-color-on-primary))",
+          container: "hsl(var(--md-sys-color-primary-container))",
+          "container-foreground": "hsl(var(--md-sys-color-on-primary-container))",
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+          DEFAULT: "hsl(var(--md-sys-color-secondary))",
+          foreground: "hsl(var(--md-sys-color-on-secondary))",
+          container: "hsl(var(--md-sys-color-secondary-container))",
+          "container-foreground": "hsl(var(--md-sys-color-on-secondary-container))",
         },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
+        tertiary: {
+          DEFAULT: "hsl(var(--md-sys-color-tertiary))",
+          foreground: "hsl(var(--md-sys-color-on-tertiary))",
+          container: "hsl(var(--md-sys-color-tertiary-container))",
+          "container-foreground": "hsl(var(--md-sys-color-on-tertiary-container))",
         },
+        error: {
+          DEFAULT: "hsl(var(--md-sys-color-error))",
+          foreground: "hsl(var(--md-sys-color-on-error))",
+          container: "hsl(var(--md-sys-color-error-container))",
+          "container-foreground": "hsl(var(--md-sys-color-on-error-container))",
+        },
+        surface: {
+          DEFAULT: "hsl(var(--md-sys-color-surface))",
+          foreground: "hsl(var(--md-sys-color-on-surface))",
+          variant: "hsl(var(--md-sys-color-surface-variant))",
+          "variant-foreground": "hsl(var(--md-sys-color-on-surface-variant))",
+        },
+        background: "hsl(var(--md-sys-color-background))",
+        foreground: "hsl(var(--md-sys-color-on-background))",
+        outline: {
+          DEFAULT: "hsl(var(--md-sys-color-outline))",
+          variant: "hsl(var(--md-sys-color-outline-variant))",
+        },
+        // Backwards compatibility with existing components
+        border: "hsl(var(--border))",
         muted: {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
         },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
-        },
       },
       borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+        none: "var(--md-sys-shape-corner-none)",
+        xs: "var(--md-sys-shape-corner-extra-small)",
+        sm: "var(--md-sys-shape-corner-small)",
+        md: "var(--md-sys-shape-corner-medium)",
+        lg: "var(--md-sys-shape-corner-large)",
+        xl: "var(--md-sys-shape-corner-extra-large)",
+        full: "var(--md-sys-shape-corner-full)",
       },
-      keyframes: {
-        "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
-        },
-        "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
-        },
-      },
-      animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
+      fontFamily: {
+        sans: [
+          "Roboto",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Segoe UI",
+          "sans-serif",
+        ],
       },
     },
   },
